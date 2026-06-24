@@ -1,16 +1,11 @@
 # Vivado build artifacts
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.gen/
+.Xil/
 *.jou
 *.log
 *.str
-.Xil/
-*/*.cache/
-*/*.hw/
-*/*.runs/
-*/*.sim/
-*/*.gen/
-*/*.ip_user_files/
-*.backup.jou
-*.backup.log
-
-!*.vhd
-!*.xdc
