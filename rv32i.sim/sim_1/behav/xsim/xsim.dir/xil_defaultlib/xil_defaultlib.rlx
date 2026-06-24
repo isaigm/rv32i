@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/Users/isaig/rv32i/rv32i.srcs/sim_1/new/tb_datapath.vhd,1782257957,vhdl,,,,tb_datapath,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/alu.vhd,1782247438,vhdl2008,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,alu,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/control_unit.vhd,1782344051,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,control_unit,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/data_memory.vhd,1782254767,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,data_memory,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,1782265468,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sim_1/new/tb_datapath.vhd,,,datapath_top,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/immediate_generator.vhd,1782247475,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,immediate_generator,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/instruction_memory.vhd,1782344300,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,instruction_memory,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/program_counter.vhd,1782255603,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,program_counter,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/register_file.vhd,1782238080,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd,,,register_file,,,,,,,,
+C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/rv32i_pkg.vhd,1782343227,vhdl,C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/alu.vhd;C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/control_unit.vhd;C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd;C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/immediate_generator.vhd,,,rv32i_pkg,,,,,,,,

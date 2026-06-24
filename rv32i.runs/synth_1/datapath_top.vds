@@ -1,0 +1,284 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jun 23 19:46:08 2026
+# Process ID         : 6900
+# Current directory  : C:/Users/isaig/rv32i/rv32i.runs/synth_1
+# Command line       : vivado.exe -log datapath_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath_top.tcl
+# Log file           : C:/Users/isaig/rv32i/rv32i.runs/synth_1/datapath_top.vds
+# Journal file       : C:/Users/isaig/rv32i/rv32i.runs/synth_1\vivado.jou
+# Running On         : xnorgate
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 8645HS w/ Radeon 760M Graphics
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16357 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30315 MB
+# Available Virtual  : 11140 MB
+#-----------------------------------------------------------
+source datapath_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 529.809 ; gain = 220.449
+Command: synth_design -top datapath_top -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7096
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.480 ; gain = 536.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath_top' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'program_counter' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/program_counter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'program_counter' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/program_counter.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'instruction_memory' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/instruction_memory.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'instruction_memory' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/instruction_memory.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/control_unit.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/control_unit.vhd:48]
+INFO: [Synth 8-226] default block is never used [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/control_unit.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/control_unit.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/register_file.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/register_file.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'immediate_generator' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/immediate_generator.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'immediate_generator' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/immediate_generator.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/alu.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'alu' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/alu.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/data_memory.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/data_memory.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'datapath_top' (0#1) [C:/Users/isaig/rv32i/rv32i.srcs/sources_1/new/datapath_top.vhd:11]
+WARNING: [Synth 8-7129] Port mem_read in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module instruction_memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1192.234 ; gain = 659.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.234 ; gain = 659.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.234 ; gain = 659.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1192.234 ; gain = 659.469
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	 257 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 6     
+	   8 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port instr[6] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module immediate_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module instruction_memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1395.281 ; gain = 862.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+----------------------------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
++-------------+----------------------------------+-----------+----------------------+--------------+
+|datapath_top | register_file_inst/registers_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++-------------+----------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1395.281 ; gain = 862.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+----------------------------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
++-------------+----------------------------------+-----------+----------------------+--------------+
+|datapath_top | register_file_inst/registers_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++-------------+----------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1395.281 ; gain = 862.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    32|
+|3     |LUT2     |    33|
+|4     |LUT3     |    65|
+|5     |LUT4     |    62|
+|6     |LUT5     |    51|
+|7     |LUT6     |    11|
+|8     |RAM32M   |    10|
+|9     |RAM32X1D |     4|
+|10    |FDRE     |    32|
+|11    |IBUF     |     2|
+|12    |OBUF     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------+----------------+------+
+|      |Instance             |Module          |Cells |
++------+---------------------+----------------+------+
+|1     |top                  |                |   335|
+|2     |  alu_inst           |alu             |    99|
+|3     |  pc_inst            |program_counter |   148|
+|4     |  register_file_inst |register_file   |    53|
++------+---------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1622.230 ; gain = 1089.465
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1636.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1747.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: f8268dd5
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1747.410 ; gain = 1217.602
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1747.410 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/isaig/rv32i/rv32i.runs/synth_1/datapath_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file datapath_top_utilization_synth.rpt -pb datapath_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 19:46:53 2026...

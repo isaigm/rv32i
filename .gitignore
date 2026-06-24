@@ -1,0 +1,16 @@
+# Vivado build artifacts
+*.jou
+*.log
+*.str
+.Xil/
+*/*.cache/
+*/*.hw/
+*/*.runs/
+*/*.sim/
+*/*.gen/
+*/*.ip_user_files/
+*.backup.jou
+*.backup.log
+
+!*.vhd
+!*.xdc
