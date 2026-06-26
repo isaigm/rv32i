@@ -14,6 +14,7 @@ entity control_unit is
         mem_read   : out std_logic;
         mem_write  : out std_logic;
         branch     : out std_logic;
+        jalr       : out std_logic;
         jump       : out std_logic);
 end entity;
 
@@ -30,6 +31,7 @@ begin
     mem_write <= '0';
     branch <= '0';
     jump <= '0';
+    jalr <= '0';
     case opcode is
       when OPCODE_LOAD =>
         reg_we <= '1';
@@ -94,17 +96,23 @@ begin
         imm_sel <= IMM_J;
         jump <= '1';
         wb_sel <= WB_PC4;
-      when OPCODE_LUI => -- 0110111
+      when OPCODE_JALR =>
+        reg_we <= '1';
+        imm_sel <= IMM_I;
+        alu_src <= '1';
+        alu_op <= ALU_SUM;
+        jump <= '1';
+        jalr <= '1';
+        wb_sel <= WB_PC4;
+      when OPCODE_LUI =>
         reg_we <= '1';
         imm_sel <= IMM_U;
         wb_sel <= WB_IMM;
-      -- el writeback debe tomar el inmediato directamente
-      when OPCODE_AUIPC => -- 0010111
+      when OPCODE_AUIPC =>
         reg_we <= '1';
         imm_sel <= IMM_U;
         wb_sel <= WB_PCIMM;
-      -- el writeback debe tomar (PC + imm)
-      
+
       when others => null;
     end case;
   end process;

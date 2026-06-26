@@ -2,16 +2,15 @@ library ieee;
   use ieee.std_logic_1164.all;
   use IEEE.NUMERIC_STD.all;
   use work.rv32i_pkg.all;
+
 entity alu is
   port (a      : in  std_logic_vector(31 downto 0);
         b      : in  std_logic_vector(31 downto 0);
         op     : in  std_logic_vector(3 downto 0);
-        result : out std_logic_vector(31 downto 0);
-        zero   : out std_logic);
+        result : out std_logic_vector(31 downto 0));
 end entity;
 
 architecture Behavioral of alu is
- 
 
 begin
   process (a, b, op)
@@ -49,6 +48,5 @@ begin
         result <= (others => '0');
     end case;
   end process;
-  zero <= '1' when result = (result'range => '0') else '0';
 
 end architecture;
