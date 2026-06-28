@@ -88,7 +88,6 @@ begin
           when others => alu_op <= ALU_SUM;
         end case;
       when OPCODE_BRANCH =>
-        alu_op <= ALU_SUB;
         imm_sel <= IMM_B;
         branch <= '1';
       when OPCODE_JAL =>
