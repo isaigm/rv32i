@@ -11,7 +11,7 @@ architecture sim of tb_datapath is
   signal clk    : std_logic := '0';
   signal rst    : std_logic := '1';   -- arranca en reset
   signal pc_out : std_logic_vector(31 downto 0);
-
+  signal LED:   std_logic_vector(15 downto 0);
   constant CLK_PERIOD : time := 10 ns;
 begin
 
@@ -20,7 +20,7 @@ begin
     port map (
       clk    => clk,
       rst    => rst,
-      pc_out => pc_out
+      LED => LED
     );
 
   -- generación del reloj: oscila para siempre

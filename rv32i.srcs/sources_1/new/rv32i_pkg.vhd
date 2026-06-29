@@ -29,9 +29,9 @@ package rv32i_pkg is
   constant OPCODE_AUIPC  : std_logic_vector(6 downto 0) := "0010111";
   constant OPCODE_JALR   : std_logic_vector(6 downto 0) := "1100111";
 
-  constant WB_ALU   : std_logic_vector(2 downto 0) := "000"; -- resultado de la ALU
-  constant WB_MEM   : std_logic_vector(2 downto 0) := "001"; -- dato de memoria (loads)
-  constant WB_PC4   : std_logic_vector(2 downto 0) := "010"; -- PC+4 (jal/jalr)
-  constant WB_IMM   : std_logic_vector(2 downto 0) := "011"; -- inmediato (LUI)
-  constant WB_PCIMM : std_logic_vector(2 downto 0) := "100"; -- PC+imm (AUIPC)
+  constant WB_ALU   : std_logic_vector(2 downto 0) := "000"; 
+  constant WB_MEM   : std_logic_vector(2 downto 0) := "001"; 
+  constant WB_PC4   : std_logic_vector(2 downto 0) := "010"; 
+  constant WB_IMM   : std_logic_vector(2 downto 0) := "011"; 
+  constant WB_PCIMM : std_logic_vector(2 downto 0) := "100"; 
 end package;

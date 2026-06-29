@@ -11,7 +11,6 @@ entity control_unit is
         alu_src    : out std_logic;
         imm_sel    : out std_logic_vector(2 downto 0);
         wb_sel     : out std_logic_vector(2 downto 0);
-        mem_read   : out std_logic;
         mem_write  : out std_logic;
         branch     : out std_logic;
         jalr       : out std_logic;
@@ -27,7 +26,6 @@ begin
     alu_op <= (others => '0');
     alu_src <= '0';
     imm_sel <= (others => '0');
-    mem_read <= '0';
     mem_write <= '0';
     branch <= '0';
     jump <= '0';
@@ -38,7 +36,6 @@ begin
         alu_op <= ALU_SUM;
         alu_src <= '1';
         imm_sel <= IMM_I;
-        mem_read <= '1';
         wb_sel <= WB_MEM;
       when OPCODE_STORE =>
         alu_op <= ALU_SUM;
